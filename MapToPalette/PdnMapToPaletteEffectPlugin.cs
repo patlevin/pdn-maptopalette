@@ -70,8 +70,9 @@ namespace MapToPalette
         /// Initialise the plugin
         /// </summary>
         public PdnMapToPaletteEffectPlugin()
-            : base(EffectName, Icon, EffectSubMenuName, EffectFlags.Configurable)
-        { }
+            : base(EffectName, Icon, EffectSubMenuName, new EffectOptions { Flags = EffectFlags.Configurable })
+        { 
+        }
 
         /// <summary>
         /// Return the plugin configuration dialog properties
